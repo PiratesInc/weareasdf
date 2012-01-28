@@ -35,3 +35,20 @@ Hoja de Estilos para weareasdf.com por PiratesInc.algo
 	
 }
 
+
+/* Types!
+-------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:700,500,400);
+
+@font-face {
+    font-family: 'FuroreRegular';
+    src: url('../fonts/Furore-webfont.eot');
+    src: url('../fonts/Furore-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Furore-webfont.woff') format('woff'),
+         url('../fonts/Furore-webfont.ttf') format('truetype'),
+         url('../fonts/Furore-webfont.svg#FuroreRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

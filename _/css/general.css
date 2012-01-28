@@ -5,10 +5,10 @@
 /* ! BASE STYLE ================== */
 
 body {
-	font: normal 0.75em/0.75em Arial, Helvetica, sans-serif;
+	font: normal 1em/1em 'Maven Pro', Helvetica, Arial, sans-serif;
 	text-align: center;
 	color: #333333;
-	background: #e2e2e2;
+	background: #e2e2e2 url(../img/bg.jpg) 0 0 repeat;
 }
 
 a {
@@ -26,8 +26,8 @@ p {
 	margin: 0;
 	padding: 1.1em 0;
 	font-style: normal;
-	font-size: 1.3em;
-	line-height: 1.2em;
+	font-size: 1em;
+	line-height: 1.1em;
 }
 
 p strong { color:#333333; }
@@ -52,19 +52,20 @@ color:#fff !important;;
 
 h1, h2, h3, h4, h5, h6 {
 	display:block;
-	font-family:TeXGyreHerosBold, Arial, Helvetica, sans-serif;
+	font-family: 'FuroreRegular', Arial, Helvetica, sans-serif;
 	color:#666666;
+	font-weight: normal;
 }
 
 h2 { font-size:3.1em; line-height:1.7em; letter-spacing:-1px; }
 
-h3 { font-size:2.5em; line-height:1.4em; }
+h3 { font-size:1.5em; line-height:1.4em; }
 
-h4 { font-size:2.1em; line-height:1.3em; }
+h4 { font-size:1.25em; line-height:1.3em; }
 
-h5 { font-size:1.7em; line-height:1.2em; }
+h5 { font-size:1.167em; line-height:1.2em; }
 
-h6 { font-size:1.3em; line-height:1.1em; }
+h6 { font-size:1em; line-height:1.1em; }
 
 
 /* ! CONTENEDOR ================== */
@@ -84,18 +85,32 @@ header {
 	z-index: 9999;
 }
 
-	header h1 { float: left; width: 150px; height: 100px; }
-	header h1 a { display: block; width: 100%; height: 100%; background: black; }
+	header h1 { float: left; width: 310px; height: 160px;  }
+	header h1 a { display: block; width: 100%; height: 100%; background: url(../img/logo.png) 0 0 no-repeat; text-indent: -9999em; overflow: hidden; }
 	
 	
 header nav { float: right; }
 	header nav ul {}
 		header nav ul li { float: left; margin: 0 15px;}
+			header nav ul li a { font: normal 1.313em/1em 'FuroreRegular', Arial, sans-serif; }
 		
 		
 /* ! Contenido ================== */
 
-section { min-height: 500px; padding: 30px 0; padding: 160px 0 0; }
+section { min-height: 700px; padding: 30px 0; padding: 160px 0 0; }
+
+section.weare {}
+	.weare .box { float: right; width: 615px; min-height: 235px; padding: 40px; background: rgba(255,255,255,0.7); }
+	.weare .box h3, .weare .box p { float: left;}
+	
+	.weare .box img { float: right; display: block; width: 190px; height: 190px; }
+
+
+
+
+
+section.contacto {}
+	.contacto .formulario { width: 470px; height: 470px; float: right; margin-right: 110px; background: rgba(255,255,255,0.5); }
 
 		
 		
@@ -105,7 +120,10 @@ section { min-height: 500px; padding: 30px 0; padding: 160px 0 0; }
 /* ! Footer ================== */
 		
 footer {}
-	footer .copyright { width: 100%; height: 50px;}
+	footer .copyright { width: 100%; height: 130px; background: url(../img/footer_bg.png) center top no-repeat; padding-top: 75px; height: 55px;}
+		footer .copyright h4 {}
+		footer .copyright span { font: normal 0.875em/1em 'FuroreRegular', Arial, sans-serif;}
+	
 	footer .social { width: 100%; background: #000; height: 60px; padding: 40px; }
 		footer .social ul { text-align: center; }
 			footer .social ul li { margin: 0 10px; display: inline-block; }

@@ -97,20 +97,46 @@ header nav { float: right; }
 		
 /* ! Contenido ================== */
 
-section { min-height: 700px; padding: 30px 0; padding: 160px 0 0; }
+.wraper { width: 100%; background: url(../img/franjas.png) top center repeat-y; }
+
+section { width: 100%; min-height: 700px; padding: 160px 0 0; }
 
 section.weare {}
-	.weare .box { float: right; width: 615px; min-height: 235px; padding: 40px; background: rgba(255,255,255,0.7); }
-	.weare .box h3, .weare .box p { float: left;}
-	
+	.weare .box { 
+		float: right;
+		width: 640px;
+		height: 340px;
+		padding: 40px;
+		background: url(../img/box_weare.png) center no-repeat;
+	}
+	.weare .box h3, .weare .box p { float: left; width: 300px; }
+	.weare .box p { clear: left; }
 	.weare .box img { float: right; display: block; width: 190px; height: 190px; }
 
-
-
-
+section.soluciones {}
+	.soluciones .slider {
+		width: 960px;
+		height: 410px;
+		background: url(../img/box_slides.png) center no-repeat;
+		overflow: hidden;
+	}
+	.soluciones nav {}
+		.soluciones nav ul { text-align: center; }
+			.soluciones nav ul li { width: 22px; height: 22px; display: inline-block; margin: 0 5px; }
+				.soluciones nav ul li a { display: block; width: 100%; height: 100%; background: #727272;;
+					-webkit-border-radius: 14px;
+					-moz-border-radius: 14px;
+					border-radius: 14px;
+					text-indent: -9999px;
+					overflow: hidden;
+				 }
+				 	.soluciones nav ul li.active a { background: #69b0f5; border: 3px solid rgba(255,255,255,0.4); }
+	.soluciones article { width: 420px; float: left; padding: 20px;  }
 
 section.contacto {}
-	.contacto .formulario { width: 470px; height: 470px; float: right; margin-right: 110px; background: rgba(255,255,255,0.5); }
+	.contacto .formulario { width: 500px; height: 500px; float: right; margin-right: 110px;
+		background: url(../img/box_contacto.png) center no-repeat;
+	}
 
 		
 		
@@ -124,7 +150,24 @@ footer {}
 		footer .copyright h4 {}
 		footer .copyright span { font: normal 0.875em/1em 'FuroreRegular', Arial, sans-serif;}
 	
-	footer .social { width: 100%; background: #000; height: 60px; padding: 40px; }
+	footer .social { width: 100%; background: #000; height: 50px; padding: 40px 0; }
 		footer .social ul { text-align: center; }
-			footer .social ul li { margin: 0 10px; display: inline-block; }
-				footer .social ul li a { display: block; width: 50px; height: 36px; background: #282828; overflow: hidden; }
+			footer .social ul li { margin: 0 10px; display: inline-block; width: 36px; height: 36px; }
+				footer .social ul li a { display: block; width: 100%; height: 100%; text-indent: -9999px; overflow: hidden;
+					background: url(../img/social_icons.png) 0 0 no-repeat;	
+				}
+				
+				footer .social ul li a.facebook { background-position: 0 -36px; }
+				footer .social ul li a.gplus { background-position: -36px -36px; }				
+				footer .social ul li a.twitter {background-position: -72px -36px;}				
+				footer .social ul li a.linkedin {background-position: -108px -36px;}
+				footer .social ul li a.mail {background-position: -144px -36px;}
+				
+				footer .social ul li a.facebook:hover { background-position: 0 0; }
+				footer .social ul li a.gplus:hover { background-position: -36px 0; }				
+				footer .social ul li a.twitter:hover {background-position: -72px 0;}				
+				footer .social ul li a.linkedin:hover {background-position: -108px 0;}
+				footer .social ul li a.mail:hover {background-position: -144px 0;}				
+
+							
+				

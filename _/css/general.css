@@ -24,13 +24,15 @@ a:hover {
 
 p {
 	margin: 0;
-	padding: 1.1em 0;
+	padding: 14px 0;
 	font-style: normal;
 	font-size: 1em;
-	line-height: 1.1em;
+	line-height: 1.35em;
+	font-weight: 400;
+	color: #303030;
 }
 
-p strong { color:#333333; }
+p strong { font-weight: bold; }
 
 div { 
 	position:relative;
@@ -59,11 +61,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 { font-size:3.1em; line-height:1.7em; letter-spacing:-1px; }
 
-h3 { font-size:1.5em; line-height:1.4em; }
+h3 { font-size:1.5em; line-height:1.2em; color: #3b3b3b; }
+
+h3 span { color: #6926a5; }
 
 h4 { font-size:1.25em; line-height:1.3em; }
 
-h5 { font-size:1.167em; line-height:1.2em; }
+h5 { font-size:1.875em; line-height:1.2em; padding-bottom: 15px; }
 
 h6 { font-size:1em; line-height:1.1em; }
 
@@ -104,12 +108,13 @@ section { width: 100%; min-height: 700px; padding: 160px 0 0; }
 section.weare {}
 	.weare .box { 
 		float: right;
-		width: 640px;
-		height: 340px;
-		padding: 40px;
+		width: 610px;
+		height: 290px;
+		padding: 90px 40px 40px 70px;
 		background: url(../img/box_weare.png) center no-repeat;
 	}
-	.weare .box h3, .weare .box p { float: left; width: 300px; }
+	.weare .box h3, .weare .box p { float: left; width: 380px; text-align: right; }
+	.weare .box h3 { padding-bottom: 15px; }
 	.weare .box p { clear: left; }
 	.weare .box img { float: right; display: block; width: 190px; height: 190px; }
 
@@ -120,6 +125,27 @@ section.soluciones {}
 		background: url(../img/box_slides.png) center no-repeat;
 		overflow: hidden;
 	}
+		.soluciones .slider .slide {
+		width: 840px;
+		height: 290px;
+		padding: 70px 60px 60px;
+		}
+		.soluciones .slider span {
+			font: normal 1em/1.2em 'FuroreRegular';
+			padding: 5px 0;;
+			display: block;
+		}
+		.soluciones .slider img {
+		
+			display: block;
+			width: 370px;
+			height: 260px;
+			float: left;
+			margin: 0 30px 0 0;
+		}
+		
+	
+	
 	.soluciones nav {}
 		.soluciones nav ul { text-align: center; }
 			.soluciones nav ul li { width: 22px; height: 22px; display: inline-block; margin: 0 5px; }
@@ -131,12 +157,27 @@ section.soluciones {}
 					overflow: hidden;
 				 }
 				 	.soluciones nav ul li.active a { background: #69b0f5; border: 3px solid rgba(255,255,255,0.4); }
+				 	
+				 	
+				 	
 	.soluciones article { width: 420px; float: left; padding: 20px;  }
+	.soluciones article.left { text-align: right; }
+	.soluciones article.right { }
+		.soluciones article.left h5 { color: #6926a5; }
+		.soluciones article.right h5 { color: #5893cc; }
 
 section.contacto {}
-	.contacto .formulario { width: 500px; height: 500px; float: right; margin-right: 110px;
+	.contacto .formulario {
+		width: 370px;
+		height: 450px;
+		padding: 50px 50px 0px 80px;
+		float: right;
+		margin-right: 110px;
 		background: url(../img/box_contacto.png) center no-repeat;
 	}
+		.contacto .formulario a { font-weight: bold; }
+		.contacto .formulario form input[type="text"],
+		.contacto .formulario form textarea { width: 100%; background: #fff; }
 
 		
 		
@@ -148,7 +189,8 @@ section.contacto {}
 footer {}
 	footer .copyright { width: 100%; height: 130px; background: url(../img/footer_bg.png) center top no-repeat; padding-top: 75px; height: 55px;}
 		footer .copyright h4 {}
-		footer .copyright span { font: normal 0.875em/1em 'FuroreRegular', Arial, sans-serif;}
+		footer .copyright b { color: #6926a5; font-weight: normal; }
+		footer .copyright span { font: normal 0.875em/1em 'FuroreRegular', Arial, sans-serif; color: #555555; }
 	
 	footer .social { width: 100%; background: #000; height: 50px; padding: 40px 0; }
 		footer .social ul { text-align: center; }

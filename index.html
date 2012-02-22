@@ -19,7 +19,7 @@ __          ________          _____  ______           _____ _____  ______
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="www-weareasdf-com" data-template-set="html5-reset">
+<head id="www.weareasdf.com" data-template-set="html5-reset">
 
 	<meta charset="utf-8">
 	
@@ -36,12 +36,12 @@ __          ________          _____  ______           _____ _____  ______
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 	
 	<meta name="author" content="Your Name Here">
-	<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
+	<meta name="Copyright" content="WEAREASDF.COM 2012. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
-	<meta name="DC.title" content="Project Name">
-	<meta name="DC.subject" content="What you're about.">
-	<meta name="DC.creator" content="Who made this site.">
+	<meta name="DC.title" content="WEAREASDF.COM">
+	<meta name="DC.subject" content="Digital Creation.">
+	<meta name="DC.creator" content="WEAREASDF.COM.">
 	
 	<!--  Mobile Viewport Fix
 	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
@@ -74,11 +74,25 @@ __          ________          _____  ______           _____ _____  ______
 	<!-- Vertical Scroll -->
 	<script type="text/javascript" src="_/js/smooth.pack.js"></script>
 	
+	<!-- Flexslider -->
+	<script type="text/javascript" src="_/js/jquery.flexslider.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	          animation: "slide",
+	          controlsContainer: ".flex-container",
+				directionNav: false,
+	    });
+	  });
+	</script>	
+	
 	
 
 </head>
 
 <body>
+
 
 <div class="wraper">
 
@@ -123,25 +137,44 @@ __          ________          _____  ______           _____ _____  ______
 	<section class="soluciones">
 		<div class="wrap">
 		
-			<nav class="buttons">
+			<!--<nav class="buttons">
 				<ul>
 					<li class="active"><a class="btn">btn</a></li>
 					<li><a class="btn">btn</a></li>
 					<li><a class="btn">btn</a></li>
 					<li><a class="btn">btn</a></li>
 				</ul>
-			</nav>
+			</nav>-->
 		
-			<div class="slider">
-				<div class="banner_contanier">
-					<div class="slide">
-						<img src="_/img/projects/vendly.png" class="reel" alt="Proyecto"/>
-						<h3>Vendly <span>Snap, Sell & Share.</span></h3>
-						<span><a href="http://www.vend.ly/">www.vend.ly</a></span>
-						<p>Vendly is a social marketplace system for mobile phones. <a href="http://www.vend.ly/">Sign up</a> for early beta access. </p>
-					</div>
+			<div class="slider flex-container">
+				<div class="banner_contanier flexslider">
+					<ul class="slides">
+					
+					<!-- ************** SLIDE 1 ************* -->
+					      <li class="slide">					
+							<img src="_/img/projects/vendly.png" class="reel" alt="Proyecto"/>
+							<h3>Vendly <span>Snap, Sell & Share.</span></h3>
+							<span><a href="http://www.vend.ly/">www.vend.ly</a></span>
+							<p>Vendly is a social marketplace system for mobile phones. <a href="http://www.vend.ly/">Sign up</a> for early beta access. </p>
+						</li>
+						
+					<!-- ************** SLIDE 2 ************* -->
+					      <li class="slide">					
+							<img src="_/img/projects/vendly.png" class="reel" alt="Proyecto"/>
+							<h3>Vendly <span>Snap, Sell & Share.</span></h3>
+							<span><a href="http://www.vend.ly/">www.vend.ly</a></span>
+							<p>Vendly is a social marketplace system for mobile phones. <a href="http://www.vend.ly/">Sign up</a> for early beta access. </p>
+						</li>
+						
+					<!-- ************** SLIDE 3 ************* -->
+					      <li class="slide">					
+							<img src="_/img/projects/vendly.png" class="reel" alt="Proyecto"/>
+							<h3>Vendly <span>Snap, Sell & Share.</span></h3>
+							<span><a href="http://www.vend.ly/">www.vend.ly</a></span>
+							<p>Vendly is a social marketplace system for mobile phones. <a href="http://www.vend.ly/">Sign up</a> for early beta access. </p>
+						</li>
+					</ul>
 				</div>
-			
 			</div>
 			
 			

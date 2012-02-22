@@ -24,7 +24,7 @@ a:hover {
 
 p {
 	margin: 0;
-	padding: 14px 0;
+	padding: 15px 0 0;
 	font-style: normal;
 	font-size: 1em;
 	line-height: 1.35em;
@@ -133,15 +133,17 @@ section.weare {}
 
 section.soluciones {}
 	.soluciones .slider {
-		width: 960px;
-		height: 410px;
-		background: url(../img/box_slides.png) center no-repeat;
-		overflow: hidden;
-	}
-		.soluciones .slider .slide {
 		width: 840px;
 		height: 290px;
 		padding: 70px 60px 60px;
+		background: url(../img/box_slides.png) center no-repeat;
+	/*
+		width: 960px;
+		height: 410px;
+		overflow: hidden;*/
+	}
+		.soluciones .slider .slide {
+		width: 840px;
 		}
 		.soluciones .slider span {
 			font: normal 1em/1.2em 'FuroreRegular';
@@ -161,8 +163,16 @@ section.soluciones {}
 	
 	.soluciones nav {}
 		.soluciones nav ul { text-align: center; }
-			.soluciones nav ul li { width: 22px; height: 22px; display: inline-block; margin: 0 5px; }
-				.soluciones nav ul li a { display: block; width: 100%; height: 100%; background: #727272;;
+			.soluciones nav ul li {
+				width: 22px;
+				height: 22px;
+				display: inline-block;margin: 0 5px;
+			}
+				.soluciones nav ul li a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					background: #727272;;
 					-webkit-border-radius: 14px;
 					-moz-border-radius: 14px;
 					border-radius: 14px;
@@ -183,13 +193,14 @@ section.soluciones {}
 section.contacto {}
 	.contacto .formulario {
 		width: 370px;
-		height: 450px;
-		padding: 50px 50px 0px 80px;
+		height: 460px;
+		padding: 30px 50px 0px 80px;
 		float: right;
 		margin-right: 110px;
 		background: url(../img/box_contacto.png) center no-repeat;
 		position: relative;
 	}
+		.contacto .formulario form { padding: 20px 0 0; }
 		.contacto .formulario input,
 		.contacto .formulario form textarea { border: none 0 transparent; }
 		.contacto .formulario a { font-weight: bold; }

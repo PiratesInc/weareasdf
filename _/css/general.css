@@ -34,6 +34,9 @@ p {
 
 p strong { font-weight: bold; }
 
+p span { color: #6926a5;
+	font-family: 'FuroreRegular', Arial, Helvetica, sans-serif; }
+
 div { 
 	position:relative;
 }
@@ -173,6 +176,7 @@ section.soluciones {}
 	.soluciones article { width: 420px; float: left; padding: 20px;  }
 	.soluciones article.left { text-align: right; }
 	.soluciones article.right { }
+	.soluciones article.center { width: 960px; }
 		.soluciones article.left h5 { color: #6926a5; }
 		.soluciones article.right h5 { color: #5893cc; }
 
